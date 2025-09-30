@@ -15,8 +15,8 @@ LEFT JOIN categories ON products.category_id=categories.category_id
 
 ### EXPLANATION
 LEFT JOIN links each product to its category.
--- product_name, unit_price → product details.
--- categories.category_name → adds descriptive category info.
+- product_name, unit_price → product details.
+- categories.category_name → adds descriptive category info.
 ---
 
 ### SAMPLE OUTPUT
@@ -33,5 +33,5 @@ LEFT JOIN links each product to its category.
 ---
 
 ### WHY THIS MATTERS?
--- Connects product pricing with categories for better analysis.
---Useful for inventory and pricing strategy.
+- Connects product pricing with categories for better analysis.
+- Useful for inventory and pricing strategy.

@@ -11,8 +11,8 @@ FROM customers
 ---
 
 ### EXPLANATION
-SELECT contact_name, city, country → retrieves customer contact name and location details.
--- Data comes directly from the customers table.
+- SELECT contact_name, city, country → retrieves customer contact name and location details.
+- Data comes directly from the customers table.
 ---
 
 ### SAMPLE OUTPUT
@@ -27,5 +27,5 @@ SELECT contact_name, city, country → retrieves customer contact name and locat
 *Values above are illustrative — actual results depend on the dataset
 ---
 ### WHY THIS MATTERS?
--- Useful for marketing campaigns or customer outreach.
---Provides an overview of where customers are located.
+- Useful for marketing campaigns or customer outreach.
+-Provides an overview of where customers are located.

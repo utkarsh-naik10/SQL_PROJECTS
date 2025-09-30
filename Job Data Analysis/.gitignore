@@ -1,0 +1,30 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Temporary / backup files
+*.tmp
+*.log
+*.bak
+*.swp
+
+# Python / Jupyter cache
+__pycache__/
+.ipynb_checkpoints/
+
+# Environments / secrets
+.env
+*.env
+venv/
+
+# Database and raw data (ignore unless intentionally included)
+*.db
+*.sqlite
+*.sql~   # backup files only
+*.csv
+*.xlsx
+*.json
+
+# IDE / editor settings
+.vscode/
+.idea/

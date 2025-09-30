@@ -1,6 +1,7 @@
 ### QUESTION:
 For Data Analyst job postings, show the salary along with the average salary for that role, and also calculate the difference between the two.
 --- 
+
 ### SQL QUERY:
 ```sql
 SELECT 
@@ -18,6 +19,7 @@ WHERE job_title_short='Data Analyst' AND salary_year_avg IS NOT NULL AND skills_
 ORDER BY salary_year_avg DESC
 ```
 --- 
+
 ### EXPLANATION:
 - Filter → only Data Analyst postings with a specified salary and skills.
 - Window function → AVG(salary_year_avg) OVER(PARTITION BY job_title_short) calculates the average salary for the role across all postings.
@@ -27,6 +29,7 @@ ORDER BY salary_year_avg DESC
 - The average salary for Data Analysts
 - The difference (sal_gap)
 --- 
+
 ### SAMPLE OUTPUT:
 
 | Job ID | Skill   | Job Title     | Location | Salary ($) | Avg Salary ($) | Gap ($) |
@@ -38,6 +41,7 @@ ORDER BY salary_year_avg DESC
 
 (Values above are illustrative — actual results depend on the dataset.)
 --- 
+
 ### WHY THIS MATTERS?
 - job seekers → see if a specific job offer is paying above or below the market average.
 - Employers → benchmark their postings against industry averages.

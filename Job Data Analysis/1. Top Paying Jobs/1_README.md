@@ -46,6 +46,7 @@ LIMIT 10
 
 (Values above are illustrative — actual results depend on the dataset.)
 --- 
+
 ### WHY THIS MATTERS?
 - Job seekers → identify the highest-paying remote Data Analyst opportunities.
 - Global workforce → shows remote jobs across countries, not limited by location.

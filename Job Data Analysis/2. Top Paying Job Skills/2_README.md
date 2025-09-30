@@ -3,6 +3,7 @@ What skills are required for the top-paying Data Analyst jobs?
 - Identify the top 10 highest-paying Data Analyst jobs.
 - Retrieve the skills required for those roles.
 --- 
+
 ### SQL QUERY:
 ```sql 
 WITH top_paying_jobs AS (
@@ -29,13 +30,14 @@ INNER JOIN skills_dim ON skills_job_dim.skill_id=skills_dim.skill_id
 ORDER BY annual_salary DESC
 ```
 --- 
+
 ### EXPLANATION:
 - CTE (top_paying_jobs) → selects the top 10 highest-paying Data Analyst jobs.
 - Filter → salary_year_avg IS NOT NULL ensures only jobs with specified salaries are included.
 - Join → connects top-paying jobs with their associated skills via skills_job_dim and skills_dim.
 - Result → one row per job–skill pair, showing which skills are required for each high-paying role.
-
 --- 
+
 ### SAMPLE OUTPUT:
 | Job ID | Job Title      | Company       | Annual Salary ($) | Skill    |
 |--------|----------------|---------------|-------------------|----------|
@@ -47,6 +49,7 @@ ORDER BY annual_salary DESC
 
 (Values above are illustrative — actual results depend on the dataset.)
 --- 
+
 ### WHY THIS MATTERS?
 - Job seekers → learn which skills are essential for landing the highest-paying Data Analyst roles.
 - Employers → benchmark their job postings against market-leading skill requirements.

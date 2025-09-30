@@ -4,6 +4,7 @@ What are the most optimal skills to learn?
 - Check which of those skills are also associated with high average salaries.
 - Focus only on remote roles with specified salaries.
 --- 
+
 ### SQL QUERY:
 ```sql
 WITH skills_demand AS(
@@ -57,6 +58,7 @@ ORDER BY demand_count DESC,
         avg_sal DESC
 ```
 --- 
+
 ### EXPLANATION:
 - CTEs → split logic into two parts:
 - skills_demand: counts demand for each skill.
@@ -68,6 +70,7 @@ ORDER BY demand_count DESC,
 - Alternative query → achieves the same logic in a single query, without CTEs.
 
 --- 
+
 ### SAMPLE OUTPUT:
 | Skill ID | Skill    | Demand Count | Avg Salary ($) |
 |----------|----------|--------------|----------------|
@@ -79,6 +82,7 @@ ORDER BY demand_count DESC,
 
 (Values above are illustrative — actual results depend on the dataset.)
 --- 
+
 ### WHY THIS MATTERS?
 - Job seekers → know not just which skills are popular, but which ones are also profitable.
 - Employers → align job postings with skills that drive market competitiveness.

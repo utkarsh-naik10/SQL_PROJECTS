@@ -1,7 +1,7 @@
-## QUESTION 3:
+### QUESTION 3:
 Get all orders placed in the year 1997.
 ---
-## SQL QUERY
+### SQL QUERY
 ```sql
 SELECT orders.order_id,
 products.product_name,
@@ -15,11 +15,12 @@ LEFT JOIN products ON order_details.product_id=products.product_id
 WHERE EXTRACT(YEAR FROM orders.order_date::DATE) =1997
 ```
 ---
-## EXPLANATION
--- EXTRACT(YEAR...) = 1997 → filters orders by year.
--- Joins orders, order_details, and products → shows product names along with shipping info.
--- Output includes order_id, product_name, ship_address, ship_city, ship_country, and order_date.
+### EXPLANATION
+- EXTRACT(YEAR...) = 1997 → filters orders by year.
+- Joins orders, order_details, and products → shows product names along with shipping info.
+- Output includes order_id, product_name, ship_address, ship_city, ship_country, and order_date.
 ---
+
 ## SAMPLE OUTPUT
 | order_id | product_name        | ship_address       | ship_city | ship_country | order_date |
 | -------- | ------------------- | ------------------ | --------- | ------------ | ---------- |
@@ -30,6 +31,6 @@ WHERE EXTRACT(YEAR FROM orders.order_date::DATE) =1997
 *Values above are illustrative — actual results depend on the dataset
 
 ---
-## WHY THIS MATTERS?
--- Provides details of all 1997 orders including products and shipping addresses.
--- Useful for year-specific sales and logistics analysis.
+### WHY THIS MATTERS?
+- Provides details of all 1997 orders including products and shipping addresses.
+- Useful for year-specific sales and logistics analysis.

@@ -54,9 +54,9 @@ LIMIT 5
 | Tableau  | 210          |
 | Power BI | 185          |
 
-(Values above are illustrative — actual results depend on the dataset.)
---- 
+*Values above are illustrative — actual results depend on the dataset
 
+--- 
 ### WHY THIS MATTERS?
 - Job seekers → understand which skills are most in demand for remote Data Analyst positions.
 - Remote professionals → tailor skill development to align with remote job market needs.

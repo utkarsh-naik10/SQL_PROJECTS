@@ -47,9 +47,9 @@ ORDER BY annual_salary DESC
 | 102    | Senior Analyst | Insight Corp  | 140,500           | R        |
 | 103    | Data Analyst   | DataWorks Ltd | 138,200           | Power BI |
 
-(Values above are illustrative — actual results depend on the dataset.)
---- 
+*Values above are illustrative — actual results depend on the dataset
 
+--- 
 ### WHY THIS MATTERS?
 - Job seekers → learn which skills are essential for landing the highest-paying Data Analyst roles.
 - Employers → benchmark their job postings against market-leading skill requirements.

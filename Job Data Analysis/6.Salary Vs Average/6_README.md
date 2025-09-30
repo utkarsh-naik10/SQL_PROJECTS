@@ -39,7 +39,8 @@ ORDER BY salary_year_avg DESC
 | 503    | Tableau | Data Analyst  | Canada   | 108,000    | 110,500        | -2,500  |
 | 504    | Excel   | Data Analyst  | UK       | 102,000    | 110,500        | -8,500  |
 
-(Values above are illustrative — actual results depend on the dataset.)
+*Values above are illustrative — actual results depend on the dataset
+
 --- 
 
 ### WHY THIS MATTERS?

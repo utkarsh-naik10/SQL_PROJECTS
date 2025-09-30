@@ -80,7 +80,8 @@ ORDER BY demand_count DESC,
 | 104      | R        | 180          | 109,200        |
 | 105      | Power BI | 175          | 107,500        |
 
-(Values above are illustrative — actual results depend on the dataset.)
+*Values above are illustrative — actual results depend on the dataset
+
 --- 
 
 ### WHY THIS MATTERS?

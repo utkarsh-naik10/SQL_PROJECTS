@@ -42,7 +42,8 @@ LIMIT 10
 | Tableau   | 110,800        |
 | R         | 109,200        |
 
-(Values above are illustrative — actual results depend on the dataset.)
+*Values above are illustrative — actual results depend on the dataset
+
 --- 
 
 ### WHY THIS MATTERS?

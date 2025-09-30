@@ -13,7 +13,7 @@ Each project is self-contained with:
 
 ## 🚀 Projects
 
-### 1. [1. Job Data Analysis](./Job%20Data%20Analysis)
+### 1. [1. Job Data Analysis](./1.Job%20Data%20Analysis)
 - Analyze job postings to uncover insights about **Data Analyst roles**.
 - Key questions answered:
   - What are the top-paying jobs?

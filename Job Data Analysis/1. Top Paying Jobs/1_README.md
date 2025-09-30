@@ -1,7 +1,7 @@
 ### QUESTION:
 - 1.What are the top-paying Data Analyst jobs?
-- 2.Which are the top 10 Data Analyst jobs available remotely?
-- 3.Show only job postings with specified (non-null) salaries.
+- Which are the top 10 Data Analyst jobs available remotely?  
+- Show only job postings with specified (non-null) salaries.  
 
 ### SQL QUERY:
 ```sql 

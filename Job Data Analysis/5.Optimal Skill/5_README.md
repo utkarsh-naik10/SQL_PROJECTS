@@ -59,13 +59,13 @@ ORDER BY demand_count DESC,
 
 ### EXPLANATION:
 CTEs → split logic into two parts:
-skills_demand: counts demand for each skill.
-avg_sal: calculates the average salary associated with each skill.
-Filters → only Data Analyst roles, remote jobs, and postings with salary data.
-JOIN → combine demand and salary insights into one result set.
-HAVING / WHERE demand_count > 10 → ensures only skills with meaningful demand are shown.
-ORDER BY → ranks skills first by demand, then by salary.
-Alternative query → achieves the same logic in a single query, without CTEs.
+- skills_demand: counts demand for each skill.
+- avg_sal: calculates the average salary associated with each skill.
+- Filters → only Data Analyst roles, remote jobs, and postings with salary data.
+- JOIN → combine demand and salary insights into one result set.
+- HAVING / WHERE demand_count > 10 → ensures only skills with meaningful demand are shown.
+- ORDER BY → ranks skills first by demand, then by salary.
+- Alternative query → achieves the same logic in a single query, without CTEs.
 
 
 ### SAMPLE OUTPUT:
@@ -82,5 +82,5 @@ Alternative query → achieves the same logic in a single query, without CTEs.
 
 ### WHY THIS MATTERS?
 Job seekers → know not just which skills are popular, but which ones are also profitable.
-Employers → align job postings with skills that drive market competitiveness.
-Data teams → demonstrates advanced SQL (CTEs, joins, grouping, filtering, combining demand + salary metrics).
+- Employers → align job postings with skills that drive market competitiveness.
+- Data teams → demonstrates advanced SQL (CTEs, joins, grouping, filtering, combining demand + salary metrics).

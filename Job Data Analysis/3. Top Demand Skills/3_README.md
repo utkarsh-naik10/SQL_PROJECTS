@@ -36,11 +36,11 @@ LIMIT 5
 ```
 ### EXPLANATION:
 Filter → restricts to remote roles only (job_work_from_home = 1).
-Role focus → job_title_short = 'Data Analyst' ensures results are role-specific.
-Aggregation → counts how often each skill appears across job postings.
-Ranking → sorts skills by demand (highest to lowest).
-Focus → LIMIT 5 returns only the top 5 most in-demand skills.
-CTE vs direct query → both queries give the same result; the CTE makes the logic easier to follow, while the second version is more concise.
+- Role focus → job_title_short = 'Data Analyst' ensures results are role-specific.
+- Aggregation → counts how often each skill appears across job postings.
+- Ranking → sorts skills by demand (highest to lowest).
+- Focus → LIMIT 5 returns only the top 5 most in-demand skills.
+- CTE vs direct query → both queries give the same result; the CTE makes the logic easier to follow, while the second version is more concise.
 
 
 ### SAMPLE OUTPUT:
@@ -57,5 +57,5 @@ CTE vs direct query → both queries give the same result; the CTE makes the log
 
 ### WHY THIS MATTERS?
 Job seekers → understand which skills are most in demand for remote Data Analyst positions.
-Remote professionals → tailor skill development to align with remote job market needs.
-Data teams → demonstrates SQL proficiency in CTEs, joins, filtering, grouping, and ranking.
+- Remote professionals → tailor skill development to align with remote job market needs.
+- Data teams → demonstrates SQL proficiency in CTEs, joins, filtering, grouping, and ranking.

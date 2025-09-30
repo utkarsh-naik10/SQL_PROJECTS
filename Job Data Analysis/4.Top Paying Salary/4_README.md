@@ -23,11 +23,11 @@ LIMIT 10
 
 ### EXPLANATION:
 Filter by role → job_title_short = 'Data Analyst' ensures we only consider Data Analyst postings.
-Remove nulls → salary_year_avg IS NOT NULL excludes postings without salary info.
-Join tables → connect job postings to skills via skills_job_dim and skills_dim.
-Aggregation → AVG(salary_year_avg) computes the average salary for each skill.
-Ranking → ORDER BY avg_salary DESC sorts skills from highest to lowest salary association.
-Focus → LIMIT 10 returns only the top 10 highest-paying skills.
+- Remove nulls → salary_year_avg IS NOT NULL excludes postings without salary info.
+- Join tables → connect job postings to skills via skills_job_dim and skills_dim.
+- Aggregation → AVG(salary_year_avg) computes the average salary for each skill.
+- Ranking → ORDER BY avg_salary DESC sorts skills from highest to lowest salary association.
+- Focus → LIMIT 10 returns only the top 10 highest-paying skills.
 
 
 ### Sample Output:
@@ -44,7 +44,7 @@ Focus → LIMIT 10 returns only the top 10 highest-paying skills.
 
 ### WHY THIS MATTERS?
 This query identifies which skills drive higher salaries for Data Analysts.
-It’s a powerful insight for:
-Job seekers → knowing which skills to prioritize learning.
-Employers → understanding market demand and competitive salary alignment.
-Data teams → showcasing SQL skills (joins, aggregation, filtering, ranking).
+- It’s a powerful insight for:
+- Job seekers → knowing which skills to prioritize learning.
+- Employers → understanding market demand and competitive salary alignment.
+- Data teams → showcasing SQL skills (joins, aggregation, filtering, ranking).

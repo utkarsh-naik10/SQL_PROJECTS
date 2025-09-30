@@ -28,10 +28,10 @@ LIMIT 10
 
 ### EXPLANATION:
 Filter by role → job_title_short = 'Data Analyst' ensures only Data Analyst postings are included.
-Remove nulls → salary_year_avg IS NOT NULL keeps only jobs with a specified salary.
-Remote focus → job_work_from_home = 1 restricts results to remote roles.
-Ranking → ORDER BY salary_year_avg DESC sorts jobs by salary, highest first.
-Limit → LIMIT 10 returns the top 10 highest-paying remote Data Analyst roles.
+- Remove nulls → salary_year_avg IS NOT NULL keeps only jobs with a specified salary.
+- Remote focus → job_work_from_home = 1 restricts results to remote roles.
+- Ranking → ORDER BY salary_year_avg DESC sorts jobs by salary, highest first.
+- Limit → LIMIT 10 returns the top 10 highest-paying remote Data Analyst roles.
 
 
 ### SAMPLE OUTPUT:
@@ -48,5 +48,5 @@ Limit → LIMIT 10 returns the top 10 highest-paying remote Data Analyst roles.
 
 ### WHY THIS MATTERS?
 Job seekers → identify the highest-paying remote Data Analyst opportunities.
-Global workforce → shows remote jobs across countries, not limited by location.
-Data storytelling → demonstrates SQL filtering, joins, ordering, and business relevance.
+- Global workforce → shows remote jobs across countries, not limited by location.
+- Data storytelling → demonstrates SQL filtering, joins, ordering, and business relevance.

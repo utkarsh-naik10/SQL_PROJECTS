@@ -64,6 +64,15 @@ erDiagram
 ```
 ---
 
+## SQL Skills Demonstrated
+- Filtering & ordering (Query 1)
+- CTEs (Query 2 & 5)
+- Aggregations & GROUP BY (Query 3 & 4)
+- Window functions (Query 6)
+- Combining demand & salary insights (Query 5)
+
+---
+
 ## Why This Project Matters  
 This project demonstrates:  
 - Strong **SQL query skills** (joins, CTEs, window functions, aggregation).  

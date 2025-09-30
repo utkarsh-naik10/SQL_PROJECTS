@@ -1,10 +1,11 @@
-QUESTION:
+### QUESTION:
 What are the most optimal skills to learn?
 1.Identify skills that are in high demand for Data Analyst roles.
 2.Check which of those skills are also associated with high average salaries.
 3.Focus only on remote roles with specified salaries.
+
 *******************************************************************
-SQL QUERY:
+### SQL QUERY:
 WITH skills_demand AS(
 SELECT
     skills_dim.skill_id,
@@ -35,7 +36,7 @@ WHERE demand_count>10
 ORDER BY demand_count DESC,
         avg_sal DESC
 
-/*Alternate query- simplified*/
+### /*Alternate query- simplified*/
 
 SELECT skills_dim.skill_id,
     skills_dim.skills,
@@ -54,8 +55,9 @@ HAVING
     COUNT(skills_job_dim.job_id)>10
 ORDER BY demand_count DESC,
         avg_sal DESC
+
 *******************************************************************
-EXPLANATION:
+### EXPLANATION:
 CTEs → split logic into two parts:
 skills_demand: counts demand for each skill.
 avg_sal: calculates the average salary associated with each skill.
@@ -64,17 +66,21 @@ JOIN → combine demand and salary insights into one result set.
 HAVING / WHERE demand_count > 10 → ensures only skills with meaningful demand are shown.
 ORDER BY → ranks skills first by demand, then by salary.
 Alternative query → achieves the same logic in a single query, without CTEs.
+
 *******************************************************************
-SAMPLE OUTPUT:
-Sample Output (mocked for clarity)
-Skill ID	Skill Demand   Count	     Avg Salary ($)
-101		SQL		320		112,300
-102		Python		290		115,500
-103		Tableau		210		110,800
-104		R		180		109,200
+### SAMPLE OUTPUT:
+| Skill ID | Skill    | Demand Count | Avg Salary ($) |
+|----------|----------|--------------|----------------|
+| 101      | SQL      | 320          | 112,300        |
+| 102      | Python   | 290          | 115,500        |
+| 103      | Tableau  | 210          | 110,800        |
+| 104      | R        | 180          | 109,200        |
+| 105      | Power BI | 175          | 107,500        |
+
 (Values above are illustrative — actual results depend on the dataset.)
+
 *******************************************************************
-WHY THIS MATTERS?
+### WHY THIS MATTERS?
 Job seekers → know not just which skills are popular, but which ones are also profitable.
 Employers → align job postings with skills that drive market competitiveness.
 Data teams → demonstrates advanced SQL (CTEs, joins, grouping, filtering, combining demand + salary metrics).

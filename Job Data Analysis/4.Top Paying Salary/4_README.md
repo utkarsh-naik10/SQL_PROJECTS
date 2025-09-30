@@ -1,9 +1,10 @@
-QUESTION:
+### QUESTION:
 “What are the top skills based on salary for my role (Data Analyst)?”
 1.Look at the average salary associated with each skill for Data Analysts.
 2.Focus only on postings with specified salaries, regardless of location.
+
 ************************************************************************
-SQL QUERY:
+###  SQL QUERY:
 SELECT skills,
         ROUND(AVG(salary_year_avg::NUMERIC),2) AS average_salary
 FROM 
@@ -18,24 +19,31 @@ GROUP BY
 ORDER BY 
         average_salary DESC
 LIMIT 10
+
 ************************************************************************
-EXPLANATION:
+### EXPLANATION:
 Filter by role → job_title_short = 'Data Analyst' ensures we only consider Data Analyst postings.
 Remove nulls → salary_year_avg IS NOT NULL excludes postings without salary info.
 Join tables → connect job postings to skills via skills_job_dim and skills_dim.
 Aggregation → AVG(salary_year_avg) computes the average salary for each skill.
 Ranking → ORDER BY avg_salary DESC sorts skills from highest to lowest salary association.
 Focus → LIMIT 10 returns only the top 10 highest-paying skills.
+
 ************************************************************************
-Sample Output:
-Skill		Avg Salary ($)
-Snowflake	120,000
-Python		115,500
-SQL		112,300
-Tableau		110,800
-R		109,200
+### Sample Output:
+
+| Skill     | Avg Salary ($) |
+|-----------|----------------|
+| Snowflake | 120,000        |
+| Python    | 115,500        |
+| SQL       | 112,300        |
+| Tableau   | 110,800        |
+| R         | 109,200        |
+
+(Values above are illustrative — actual results depend on the dataset.)
+
 ************************************************************************
-WHY THIS MATTERS?
+### WHY THIS MATTERS?
 This query identifies which skills drive higher salaries for Data Analysts.
 It’s a powerful insight for:
 Job seekers → knowing which skills to prioritize learning.

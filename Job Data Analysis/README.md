@@ -1,4 +1,4 @@
-#Job Data Analysis – SQL Portfolio Project  
+## Job Data Analysis – SQL Portfolio Project  
 
 ## Overview  
 This project explores job market data for **Data Analyst roles** using SQL.  
@@ -11,7 +11,7 @@ The goal is to answer business-relevant questions such as:
 Each query is stored in its own folder with:  
 -  `query.sql` – the SQL code  
 -  `README.md` – explanation of the question, approach, and insights  
--  `output.png` – screenshot of the results  
+-  `result.png` – screenshot of the results  
 
 ---
 
@@ -27,7 +27,7 @@ Each query is stored in its own folder with:
 ---
 
 ## Tech Stack  
-- **SQL :PostgreSQL 
+- **SQL** :PostgreSQL 
 - **Dataset**: The dataset was collected from an open online source and contains job postings data with details on job roles, companies, salaries, and required skills. 
 - **Visualization**: Screenshots of query results  
 

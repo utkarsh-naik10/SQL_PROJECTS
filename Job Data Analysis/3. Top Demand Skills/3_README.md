@@ -2,7 +2,7 @@
 What are the top 5 in-demand skills for my role (Data Analyst), considering only remote jobs?
 - Count the frequency of each skill across remote Data Analyst job postings.
 - Return the top 5 most in-demand skills.
-
+--- 
 ### SQL QUERY:
 ```sql
 WITH remote_job AS(
@@ -34,6 +34,7 @@ ORDER BY demand_count DESC
 LIMIT 5
 
 ```
+--- 
 ### EXPLANATION:
 - Filter → restricts to remote roles only (job_work_from_home = 1).
 - Role focus → job_title_short = 'Data Analyst' ensures results are role-specific.
@@ -42,7 +43,7 @@ LIMIT 5
 - Focus → LIMIT 5 returns only the top 5 most in-demand skills.
 - CTE vs direct query → both queries give the same result; the CTE makes the logic easier to follow, while the second version is more concise.
 
-
+--- 
 ### SAMPLE OUTPUT:
 | Skill    | Demand Count |
 |----------|--------------|
@@ -54,7 +55,7 @@ LIMIT 5
 
 (Values above are illustrative — actual results depend on the dataset.)
 
-
+--- 
 ### WHY THIS MATTERS?
 - Job seekers → understand which skills are most in demand for remote Data Analyst positions.
 - Remote professionals → tailor skill development to align with remote job market needs.

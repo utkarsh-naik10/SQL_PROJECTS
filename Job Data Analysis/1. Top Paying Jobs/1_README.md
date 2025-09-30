@@ -2,7 +2,7 @@
 1.What are the top-paying Data Analyst jobs?
 - Which are the top 10 Data Analyst jobs available remotely?  
 - Show only job postings with specified (non-null) salaries.  
-
+--- 
 ### SQL QUERY:
 ```sql 
 SELECT
@@ -25,7 +25,7 @@ ORDER BY
     salary_year_avg DESC
 LIMIT 10
 ```
-
+--- 
 ### EXPLANATION:
 - Filter by role → job_title_short = 'Data Analyst' ensures only Data Analyst postings are included.
 - Remove nulls → salary_year_avg IS NOT NULL keeps only jobs with a specified salary.
@@ -33,7 +33,7 @@ LIMIT 10
 - Ranking → ORDER BY salary_year_avg DESC sorts jobs by salary, highest first.
 - Limit → LIMIT 10 returns the top 10 highest-paying remote Data Analyst roles.
 
-
+--- 
 ### SAMPLE OUTPUT:
 
 | Company       | Job Title        | Country | Avg Salary ($) | Schedule   | Location |
@@ -45,7 +45,7 @@ LIMIT 10
 | MetricX       | Data Specialist | Germany | 132,800        | Full-time  | Remote   |
 
 (Values above are illustrative — actual results depend on the dataset.)
-
+--- 
 ### WHY THIS MATTERS?
 - Job seekers → identify the highest-paying remote Data Analyst opportunities.
 - Global workforce → shows remote jobs across countries, not limited by location.

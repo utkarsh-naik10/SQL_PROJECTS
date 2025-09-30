@@ -2,7 +2,7 @@
 “What are the top skills based on salary for my role (Data Analyst)?”
 - Look at the average salary associated with each skill for Data Analysts.
 - Focus only on postings with specified salaries, regardless of location.
-
+--- 
 ###  SQL QUERY:
 ```sql 
 SELECT skills,
@@ -20,7 +20,7 @@ ORDER BY
         average_salary DESC
 LIMIT 10
 ```
-
+--- 
 ### EXPLANATION:
 - Filter by role → job_title_short = 'Data Analyst' ensures we only consider Data Analyst postings.
 - Remove nulls → salary_year_avg IS NOT NULL excludes postings without salary info.
@@ -29,7 +29,7 @@ LIMIT 10
 - Ranking → ORDER BY avg_salary DESC sorts skills from highest to lowest salary association.
 - Focus → LIMIT 10 returns only the top 10 highest-paying skills.
 
-
+--- 
 ### Sample Output:
 
 | Skill     | Avg Salary ($) |
@@ -41,7 +41,7 @@ LIMIT 10
 | R         | 109,200        |
 
 (Values above are illustrative — actual results depend on the dataset.)
-
+--- 
 ### WHY THIS MATTERS?
 - This query identifies which skills drive higher salaries for Data Analysts.
 - It’s a powerful insight for:

@@ -1,7 +1,8 @@
-## QUESTION 2:
+### QUESTION 2:
 Show all products with their unit price and category name.
 ---
-## SQL QUERY
+
+### SQL QUERY
 ```sql
 SELECT product_name,
 products.category_id,
@@ -11,12 +12,14 @@ FROM products
 LEFT JOIN categories ON products.category_id=categories.category_id
 ```
 ---
-## EXPLANATION
+
+### EXPLANATION
 LEFT JOIN links each product to its category.
 -- product_name, unit_price → product details.
 -- categories.category_name → adds descriptive category info.
 ---
-## SAMPLE OUTPUT
+
+### SAMPLE OUTPUT
 | product_name       | category_id | unit_price | category_name |
 | ------------------ | ----------- | ---------- | ------------- |
 | Chai               | 1           | 18.00      | Beverages     |
@@ -28,6 +31,7 @@ LEFT JOIN links each product to its category.
 *Values above are illustrative — actual results depend on the dataset
 
 ---
-## WHY THIS MATTERS?
-Connects product pricing with categories for better analysis.
+
+### WHY THIS MATTERS?
+-- Connects product pricing with categories for better analysis.
 --Useful for inventory and pricing strategy.

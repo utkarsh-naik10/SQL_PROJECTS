@@ -1,4 +1,5 @@
 ## Job Data Analysis – SQL Portfolio Project  
+--- 
 
 ## Overview  
 This project explores job market data for **Data Analyst roles** using SQL.  

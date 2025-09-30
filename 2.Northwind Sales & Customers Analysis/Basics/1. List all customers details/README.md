@@ -10,7 +10,7 @@ FROM customers
 ```
 ---
 ## EXPLANATION
--- SELECT contact_name, city, country → retrieves customer contact name and location details.
+SELECT contact_name, city, country → retrieves customer contact name and location details.
 -- Data comes directly from the customers table.
 ---
 ## SAMPLE OUTPUT

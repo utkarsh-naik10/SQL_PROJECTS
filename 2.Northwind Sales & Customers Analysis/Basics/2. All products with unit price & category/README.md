@@ -12,7 +12,7 @@ LEFT JOIN categories ON products.category_id=categories.category_id
 ```
 ---
 ## EXPLANATION
--- LEFT JOIN links each product to its category.
+LEFT JOIN links each product to its category.
 -- product_name, unit_price → product details.
 -- categories.category_name → adds descriptive category info.
 ---
@@ -24,9 +24,10 @@ LEFT JOIN categories ON products.category_id=categories.category_id
 | Aniseed Syrup      | 2           | 10.00      | Condiments    |
 | Chef Anton’s Cajun | 2           | 22.00      | Condiments    |
 | Ikura              | 8           | 31.00      | Seafood       |
+
 *Values above are illustrative — actual results depend on the dataset
 
 ---
 ## WHY THIS MATTERS?
--- Connects product pricing with categories for better analysis.
--- Useful for inventory and pricing strategy.
+Connects product pricing with categories for better analysis.
+--Useful for inventory and pricing strategy.

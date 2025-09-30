@@ -33,6 +33,36 @@ Each query is stored in its own folder with:
 - **Visualization**: Screenshots of query results  
 
 ---
+## Schema Diagram
+
+```mermaid
+erDiagram
+  job_postings_fact {
+    bigint job_id PK
+    int company_id FK
+    varchar job_title_short
+    varchar job_location
+    numeric salary_year_avg
+    boolean job_work_from_home
+  }
+  company_dim {
+    int company_id PK
+    varchar name
+  }
+  skills_job_dim {
+    int job_id FK
+    int skill_id FK
+  }
+  skills_dim {
+    int skill_id PK
+    varchar skills
+  }
+
+  company_dim ||--o{ job_postings_fact : "posts"
+  job_postings_fact ||--o{ skills_job_dim : "requires"
+  skills_dim ||--o{ skills_job_dim : "linked"
+```
+---
 
 ## Why This Project Matters  
 This project demonstrates:  

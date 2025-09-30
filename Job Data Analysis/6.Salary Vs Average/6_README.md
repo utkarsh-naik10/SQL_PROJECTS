@@ -19,7 +19,7 @@ ORDER BY salary_year_avg DESC
 ```
 
 ### EXPLANATION:
-Filter → only Data Analyst postings with a specified salary and skills.
+- Filter → only Data Analyst postings with a specified salary and skills.
 - Window function → AVG(salary_year_avg) OVER(PARTITION BY job_title_short) calculates the average salary for the role across all postings.
 - Difference calculation → salary_year_avg - avg_sal shows how much higher or lower each job’s salary is compared to the average.
 - Result → for each job posting, you get:
@@ -41,6 +41,6 @@ Filter → only Data Analyst postings with a specified salary and skills.
 
 
 ### WHY THIS MATTERS?
-job seekers → see if a specific job offer is paying above or below the market average.
+- job seekers → see if a specific job offer is paying above or below the market average.
 - Employers → benchmark their postings against industry averages.
 - Data teams → demonstrates SQL skills with window functions, joins, filtering, and custom calculations.

@@ -30,7 +30,7 @@ ORDER BY annual_salary DESC
 ```
 
 ### EXPLANATION:
-CTE (top_paying_jobs) → selects the top 10 highest-paying Data Analyst jobs.
+- CTE (top_paying_jobs) → selects the top 10 highest-paying Data Analyst jobs.
 - Filter → salary_year_avg IS NOT NULL ensures only jobs with specified salaries are included.
 - Join → connects top-paying jobs with their associated skills via skills_job_dim and skills_dim.
 - Result → one row per job–skill pair, showing which skills are required for each high-paying role.
@@ -48,6 +48,6 @@ CTE (top_paying_jobs) → selects the top 10 highest-paying Data Analyst jobs.
 (Values above are illustrative — actual results depend on the dataset.)
 
 ### WHY THIS MATTERS?
-Job seekers → learn which skills are essential for landing the highest-paying Data Analyst roles.
+- Job seekers → learn which skills are essential for landing the highest-paying Data Analyst roles.
 - Employers → benchmark their job postings against market-leading skill requirements.
 - Data teams → demonstrates advanced SQL concepts like CTEs, filtering, joins, and ranking.

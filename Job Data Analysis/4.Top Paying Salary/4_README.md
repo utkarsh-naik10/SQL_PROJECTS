@@ -22,7 +22,7 @@ LIMIT 10
 ```
 
 ### EXPLANATION:
-Filter by role → job_title_short = 'Data Analyst' ensures we only consider Data Analyst postings.
+- Filter by role → job_title_short = 'Data Analyst' ensures we only consider Data Analyst postings.
 - Remove nulls → salary_year_avg IS NOT NULL excludes postings without salary info.
 - Join tables → connect job postings to skills via skills_job_dim and skills_dim.
 - Aggregation → AVG(salary_year_avg) computes the average salary for each skill.
@@ -43,7 +43,7 @@ Filter by role → job_title_short = 'Data Analyst' ensures we only consider Dat
 (Values above are illustrative — actual results depend on the dataset.)
 
 ### WHY THIS MATTERS?
-This query identifies which skills drive higher salaries for Data Analysts.
+- This query identifies which skills drive higher salaries for Data Analysts.
 - It’s a powerful insight for:
 - Job seekers → knowing which skills to prioritize learning.
 - Employers → understanding market demand and competitive salary alignment.

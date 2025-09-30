@@ -58,7 +58,7 @@ ORDER BY demand_count DESC,
 ```
 
 ### EXPLANATION:
-CTEs → split logic into two parts:
+- CTEs → split logic into two parts:
 - skills_demand: counts demand for each skill.
 - avg_sal: calculates the average salary associated with each skill.
 - Filters → only Data Analyst roles, remote jobs, and postings with salary data.
@@ -81,6 +81,6 @@ CTEs → split logic into two parts:
 
 
 ### WHY THIS MATTERS?
-Job seekers → know not just which skills are popular, but which ones are also profitable.
+- Job seekers → know not just which skills are popular, but which ones are also profitable.
 - Employers → align job postings with skills that drive market competitiveness.
 - Data teams → demonstrates advanced SQL (CTEs, joins, grouping, filtering, combining demand + salary metrics).

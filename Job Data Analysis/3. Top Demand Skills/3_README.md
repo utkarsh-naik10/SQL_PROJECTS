@@ -35,7 +35,7 @@ LIMIT 5
 
 ```
 ### EXPLANATION:
-Filter → restricts to remote roles only (job_work_from_home = 1).
+- Filter → restricts to remote roles only (job_work_from_home = 1).
 - Role focus → job_title_short = 'Data Analyst' ensures results are role-specific.
 - Aggregation → counts how often each skill appears across job postings.
 - Ranking → sorts skills by demand (highest to lowest).
@@ -56,6 +56,6 @@ Filter → restricts to remote roles only (job_work_from_home = 1).
 
 
 ### WHY THIS MATTERS?
-Job seekers → understand which skills are most in demand for remote Data Analyst positions.
+- Job seekers → understand which skills are most in demand for remote Data Analyst positions.
 - Remote professionals → tailor skill development to align with remote job market needs.
 - Data teams → demonstrates SQL proficiency in CTEs, joins, filtering, grouping, and ranking.

@@ -44,9 +44,9 @@ LIMIT 10
 | CloudBI       | Data Analyst    | USA     | 135,000        | Full-time  | Remote   |
 | MetricX       | Data Specialist | Germany | 132,800        | Full-time  | Remote   |
 
-(Values above are illustrative — actual results depend on the dataset.)
---- 
+*Values above are illustrative — actual results depend on the dataset
 
+--- 
 ### WHY THIS MATTERS?
 - Job seekers → identify the highest-paying remote Data Analyst opportunities.
 - Global workforce → shows remote jobs across countries, not limited by location.

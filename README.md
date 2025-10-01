@@ -23,6 +23,16 @@ Each project is self-contained with:
 - **SQL concepts used**: joins, CTEs, aggregations, window functions.
 
 ---
+### 2. [Northwind Sales & Customers Analysis](./2.%20Northwind%20Sales%20&%20Customers%20Analysis)
+- Explore the classic **Northwind Traders database** with 20 structured queries.  
+- Queries are grouped into 4 categories:
+  - **Basic SQL Queries (Q1–Q5):** Customers, products, orders, and simple aggregations.  
+  - **Joins & Aggregations (Q6–Q10):** Employee performance, customer activity, revenue per product.  
+  - **Business Insights (Q11–Q15):** Top countries, shippers, categories, sales trends, top employees.  
+  - **Advanced Analysis (Q16–Q20):** Supplier dominance, territory management, inactive customers, product rankings, year-over-year growth.  
+- **SQL concepts used**: joins, grouping, CTEs, window functions (`RANK`, `LAG`), business KPIs.  
+
+---
 
 *(Future projects will be added here — e.g. E-commerce Sales Analysis, Healthcare Dataset Analysis, etc.)*
 

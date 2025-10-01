@@ -12,7 +12,7 @@ The goal is to answer **20 business-relevant questions** across four categories:
 Each query is stored in its own folder with:  
 - `query.sql` – the SQL code  
 - `README.md` – explanation of the question, approach, and insights  
-- `output.png` – (optional) screenshot of the results  
+- `result.png` – (optional) screenshot of the results  
 
 ---
 
@@ -128,3 +128,22 @@ erDiagram
   territories }o--|| region : "part_of"
   employees ||--o{ employee_territories : "manages"
   territories ||--o{ employee_territories : "covered_by"
+  ```
+---
+
+## SQL Skills Demonstrated
+- Filtering & ordering (Basic Queries)
+- Joins & Aggregations (Intermediate Queries)
+- Business-focused analysis (Top customers, suppliers, employees)
+- CTEs (Average order value, YoY growth)
+- Window Functions (RANK, LAG, ROW_NUMBER)
+- Trend analysis (Monthly & Year-over-Year sales)
+
+---
+
+## Why This Project Matters  
+This project demonstrates:
+- Ability to write clean and optimized SQL queries.
+- Extracting business insights from relational data.
+- Proficiency in joins, aggregations, CTEs, and window functions.
+- Presenting work in a professional GitHub portfolio structure for easy readability.

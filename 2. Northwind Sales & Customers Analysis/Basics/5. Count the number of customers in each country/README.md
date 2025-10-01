@@ -27,7 +27,7 @@ ORDER BY Tot_Cust DESC
 | Brazil  | 9        |
 | UK      | 7        |
 
-*Values above are illustrative — actual results depend on the dataset
+- *Values above are illustrative — actual results depend on the dataset
 
 ---
 

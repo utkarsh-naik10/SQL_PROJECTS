@@ -30,7 +30,7 @@ LIMIT 10
 | QUICK       | Horst        | (312)555-888 | 28    |
 | HUNGO       | Pedro        | (514)555-777 | 27    |
 
-*Values above are illustrative — actual results depend on the dataset
+- *Values above are illustrative — actual results depend on the dataset
 ---
 ### WHY THIS MATTERS?
 - Highlights the most loyal customers.

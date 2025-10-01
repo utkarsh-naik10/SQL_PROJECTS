@@ -24,7 +24,7 @@ FROM customers
 | Thomas Hardy       | London      | UK      |
 | Christina Berglund | Luleå       | Sweden  |
 
--- *Values above are illustrative — actual results depend on the dataset
+- *Values above are illustrative — actual results depend on the dataset
 ---
 ### WHY THIS MATTERS?
 - Useful for marketing campaigns or customer outreach.

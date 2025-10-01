@@ -36,7 +36,7 @@ ORDER BY avg_order_val
 | Save-a-lot    | 10,200.50     |
 | Queen Cozinha | 9,800.20      |
 
-*Values above are illustrative — actual results depend on the dataset
+- *Values above are illustrative — actual results depend on the dataset
 ---
 ### WHY THIS MATTERS?
 - Identifies high-value customers who place large orders.

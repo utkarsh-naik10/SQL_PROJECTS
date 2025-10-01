@@ -27,7 +27,7 @@ LIMIT 5
 | Sir Rodney's Marmalade  | 81.00      |
 | Carnarvon Tigers        | 62.50      |
 
-*Values above are illustrative — actual results depend on the dataset
+- *Values above are illustrative — actual results depend on the dataset
 
 ---
 ### WHY THIS MATTERS?

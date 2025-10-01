@@ -23,7 +23,7 @@ JOIN suppliers ON products.supplier_id=suppliers.supplier_id
 | Chang         | Exotic Liquids | London   |
 | Aniseed Syrup | Leka Trading   | Göteborg |
 
-*Values above are illustrative — actual results depend on the dataset
+- *Values above are illustrative — actual results depend on the dataset
 ---
 ### WHY THIS MATTERS?
 - Maps products to suppliers for better inventory tracking.

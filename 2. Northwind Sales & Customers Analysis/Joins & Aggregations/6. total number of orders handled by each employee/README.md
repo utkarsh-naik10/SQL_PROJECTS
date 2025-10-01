@@ -29,7 +29,7 @@ ORDER BY Tot DESC
 | 4           | Margaret   | Peacock   | 123 |
 | 1           | Nancy      | Davolio   | 123 |
 
-*Values above are illustrative — actual results depend on the dataset
+- *Values above are illustrative — actual results depend on the dataset
 ---
 ### WHY THIS MATTERS?
 - Shows the workload distribution among employees.

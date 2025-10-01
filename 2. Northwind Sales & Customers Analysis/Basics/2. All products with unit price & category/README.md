@@ -28,7 +28,7 @@ LEFT JOIN links each product to its category.
 | Chef Anton’s Cajun | 2           | 22.00      | Condiments    |
 | Ikura              | 8           | 31.00      | Seafood       |
 
-*Values above are illustrative — actual results depend on the dataset
+- *Values above are illustrative — actual results depend on the dataset
 
 ---
 

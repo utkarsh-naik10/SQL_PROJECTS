@@ -28,7 +28,7 @@ WHERE EXTRACT(YEAR FROM orders.order_date::DATE) =1997
 | 10248    | Singaporean Hokkien | 59 rue de l’Abbaye | Reims     | France       | 1997-07-04 |
 | 10249    | Tofu                | Luisenstr. 48      | Münster   | Germany      | 1997-07-05 |
 
-*Values above are illustrative — actual results depend on the dataset
+- *Values above are illustrative — actual results depend on the dataset
 
 ---
 ### WHY THIS MATTERS?

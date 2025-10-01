@@ -26,7 +26,7 @@ ORDER BY Total_revenue_$ DESC
 | Thüringer     | 123,500.50      |
 | Mishi Kobe    | 120,000.00      |
 
-*Values above are illustrative — actual results depend on the dataset
+- *Values above are illustrative — actual results depend on the dataset
 ---
 ### WHY THIS MATTERS?
 - Reveals top revenue-generating products.

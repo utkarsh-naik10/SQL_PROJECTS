@@ -1,5 +1,5 @@
-### QUESTION 1:
-12.Which shipper handled the most orders?
+### QUESTION 12:
+Which shipper handled the most orders?
 ---
 ### SQL QUERY
 ```sql

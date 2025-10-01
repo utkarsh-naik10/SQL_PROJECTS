@@ -1,5 +1,5 @@
 ### QUESTION 1:
-1.List all customers and their contact information.
+List all customers and their contact information.
 ---
 ### SQL QUERY
 ```sql

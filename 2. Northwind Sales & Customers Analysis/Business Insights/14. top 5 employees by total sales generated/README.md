@@ -1,5 +1,5 @@
-### QUESTION 1:
-14.List the top 5 employees ranked by total sales generated.
+### QUESTION 14:
+List the top 5 employees ranked by total sales generated.
 ---
 ### SQL QUERY
 ```sql

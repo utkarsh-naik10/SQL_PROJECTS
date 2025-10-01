@@ -1,5 +1,5 @@
-### QUESTION 1:
-13.Find the most popular product category by sales volume.
+### QUESTION 13:
+Find the most popular product category by sales volume.
 ---
 ### SQL QUERY
 ```sql

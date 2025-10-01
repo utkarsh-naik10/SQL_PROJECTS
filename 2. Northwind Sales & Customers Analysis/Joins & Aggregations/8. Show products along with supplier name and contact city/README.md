@@ -1,5 +1,5 @@
-### QUESTION 1:
-8.Show all products along with their supplier’s company name and city
+### QUESTION 8:
+Show all products along with their supplier’s company name and city
 ---
 ### SQL QUERY
 ```sql

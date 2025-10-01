@@ -1,5 +1,5 @@
-### QUESTION 1:
-7.Find the top 10 customers by total orders placed.
+### QUESTION 7:
+Find the top 10 customers by total orders placed.
 ---
 ### SQL QUERY
 ```sql

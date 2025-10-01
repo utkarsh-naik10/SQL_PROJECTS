@@ -1,5 +1,5 @@
-### QUESTION 1:
-15.Show monthly sales trends (sales per month across all years).
+### QUESTION 15:
+Show monthly sales trends (sales per month across all years).
 ---
 
 ### SQL QUERY

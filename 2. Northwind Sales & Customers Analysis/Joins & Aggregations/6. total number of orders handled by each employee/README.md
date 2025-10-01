@@ -1,5 +1,5 @@
-### QUESTION 1:
-6.Find how many orders were processed by each employees.
+### QUESTION 6:
+Find how many orders were processed by each employees.
 ---
 ### SQL QUERY
 ```sql

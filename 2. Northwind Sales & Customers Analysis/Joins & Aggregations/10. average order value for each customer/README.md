@@ -1,5 +1,5 @@
-### QUESTION 1:
-10.Find the average order value for each customer
+### QUESTION 10:
+Find the average order value for each customer
 ---
 ### SQL QUERY
 ```sql

@@ -1,5 +1,5 @@
-### QUESTION 1:
-9.Calculate total revenue (unit_price * quantity) for each product
+### QUESTION 9:
+Calculate total revenue (unit_price * quantity) for each product
 ---
 ### SQL QUERY
 ```sql

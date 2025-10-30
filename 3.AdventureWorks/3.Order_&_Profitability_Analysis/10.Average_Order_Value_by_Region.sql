@@ -2,7 +2,7 @@
 Compute the average order value for each sales territory. 
 Highlight the region with the largest deviation from the global average.*/
 
-\WITH TerritoryAvg AS (
+WITH TerritoryAvg AS (
     SELECT
         soh.TerritoryID,
         st.Name AS TerritoryName,

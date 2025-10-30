@@ -1,5 +1,5 @@
 /*Sales Trend Analysis
-Show year-over-year growth percentage in total sales, grouped by territory.*/
+Show year-over-year growth percentage in total sales*/
 
 WITH YearlyRevenue AS (
 SELECT

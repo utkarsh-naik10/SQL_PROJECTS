@@ -1,54 +1,62 @@
-### QUESTION:
-“What are the top skills based on salary for my role (Data Analyst)?”
-- Look at the average salary associated with each skill for Data Analysts.
-- Focus only on postings with specified salaries, regardless of location.
---- 
+# 💼 Top Paying Skills — Job Data Analysis (SQL)
 
-###  SQL QUERY:
-```sql 
-SELECT skills,
-        ROUND(AVG(salary_year_avg::NUMERIC),2) AS average_salary
+**Project: Job Data Analysis (SQL)**  
+**Objective: Identify which technical skills are associated with the highest average salaries for Data Analyst positions.**
+
+---
+
+🧾 **SQL Query**
+```sql
+SELECT
+    skills_dim.skills,
+    ROUND(AVG(job_postings_fact.salary_year_avg), 2) AS average_salary
 FROM 
-        job_postings_fact
-INNER JOIN skills_job_dim ON job_postings_fact.job_id=skills_job_dim.job_id
-INNER JOIN skills_dim ON skills_job_dim.skill_id=skills_dim.skill_id
+    job_postings_fact
+INNER JOIN 
+    skills_job_dim ON job_postings_fact.job_id = skills_job_dim.job_id
+INNER JOIN 
+    skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
 WHERE 
-        job_title_short='Data Analyst' AND 
-        salary_year_avg IS NOT NULL
+    job_postings_fact.job_title_short = 'Data Analyst'
+    AND job_postings_fact.salary_year_avg IS NOT NULL
 GROUP BY 
-        skills
+    skills_dim.skills
 ORDER BY 
-        average_salary DESC
-LIMIT 10
+    average_salary DESC
+LIMIT 10;
 ```
---- 
+## 📸 **Result Preview**
 
-### EXPLANATION:
-- Filter by role → job_title_short = 'Data Analyst' ensures we only consider Data Analyst postings.
-- Remove nulls → salary_year_avg IS NOT NULL excludes postings without salary info.
-- Join tables → connect job postings to skills via skills_job_dim and skills_dim.
-- Aggregation → AVG(salary_year_avg) computes the average salary for each skill.
-- Ranking → ORDER BY avg_salary DESC sorts skills from highest to lowest salary association.
-- Focus → LIMIT 10 returns only the top 10 highest-paying skills.
---- 
+Here’s the output of the above query:
 
-### Sample Output:
+![Top Paying Skills Result](./4_result.png)
 
-| Skill     | Avg Salary ($) |
-|-----------|----------------|
-| Snowflake | 120,000        |
-| Python    | 115,500        |
-| SQL       | 112,300        |
-| Tableau   | 110,800        |
-| R         | 109,200        |
+---
 
-*Values above are illustrative — actual results depend on the dataset
+## 💡 **Insights**
 
---- 
+- **SVN** stands out with an exceptionally high average salary of **$400,000**, likely due to niche or senior-level postings requiring version control expertise.  
+- **Solidity** ranks second at **$179,000**, highlighting the strong pay for **blockchain and smart contract** development skills.  
+- **Couchbase** and **DataRobot** both offer salaries around **$155K–$160K**, showing demand for **database** and **AI/automation** technologies.  
+- **Go (Golang)** and **MxNet** also appear among high-paying skills, linking backend and deep learning capabilities to better pay.  
+- Traditional data tools like **dplyr** and **GitLab** still command strong salaries, especially when combined with automation and cloud experience.  
 
-### WHY THIS MATTERS?
-- This query identifies which skills drive higher salaries for Data Analysts.
-- It’s a powerful insight for:
-- Job seekers → knowing which skills to prioritize learning.
-- Employers → understanding market demand and competitive salary alignment.
-- Data teams → showcasing SQL skills (joins, aggregation, filtering, ranking).
+---
+
+## 📈 **Overall Insight**
+
+- Specialized or emerging technologies like **Solidity, Couchbase, and Go** drive the highest compensation in the analytics field.  
+- Roles demanding **automation, AI frameworks, and version control** knowledge tend to pay significantly more.  
+- Developing a mix of **data + cloud + DevOps** skills can greatly increase earning potential for analysts transitioning toward data engineering or MLOps.  
+---
+📂 Folder Structure
+```
+/SQL_Projects
+ ├── 4.Top_Paying_Skills
+ │    ├── 4_result.png
+ │    ├── 4_top_paying_skills.sql
+ │    └── README.md
+
+```
+📌 Author: Utkarsh Naik  
+📈 Project Type: SQL-based Job Market Analysis

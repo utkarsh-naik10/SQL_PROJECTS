@@ -1,10 +1,11 @@
-### QUESTION:
-What are the top 5 in-demand skills for my role (Data Analyst), considering only remote jobs?
-- Count the frequency of each skill across remote Data Analyst job postings.
-- Return the top 5 most in-demand skills.
---- 
+# 💼 Top Demand Skills — Job Data Analysis (SQL)
 
-### SQL QUERY:
+**Project: Job Data Analysis (SQL)**  
+**Objective: Identify the most frequently requested technical skills for Data Analyst positions.**
+
+---
+
+🧾 **SQL Query**
 ```sql
 WITH remote_job AS(
 SELECT skill_id,
@@ -22,7 +23,7 @@ INNER JOIN skills_dim ON remote_job.skill_id=skills_dim.skill_id
 ORDER BY cnt DESC
 LIMIT 5
 
-/*ALTERNATE QUERY*/
+/*OR*/
 
 SELECT skills,
     COUNT(*) AS demand_count
@@ -34,30 +35,39 @@ GROUP BY skills
 ORDER BY demand_count DESC
 LIMIT 5
 ```
---- 
+## 📸 **Result Preview**
 
-### EXPLANATION:
-- Filter → restricts to remote roles only (job_work_from_home = 1).
-- Role focus → job_title_short = 'Data Analyst' ensures results are role-specific.
-- Aggregation → counts how often each skill appears across job postings.
-- Ranking → sorts skills by demand (highest to lowest).
-- Focus → LIMIT 5 returns only the top 5 most in-demand skills.
-- CTE vs direct query → both queries give the same result; the CTE makes the logic easier to follow, while the second version is more concise.
---- 
+Here’s the output of the above query:
 
-### SAMPLE OUTPUT:
-| Skill    | Demand Count |
-|----------|--------------|
-| SQL      | 320          |
-| Python   | 290          |
-| Excel    | 250          |
-| Tableau  | 210          |
-| Power BI | 185          |
+![Top Demand Skills Result](./3_result.png)
 
-*Values above are illustrative — actual results depend on the dataset
+---
 
---- 
-### WHY THIS MATTERS?
-- Job seekers → understand which skills are most in demand for remote Data Analyst positions.
-- Remote professionals → tailor skill development to align with remote job market needs.
-- Data teams → demonstrates SQL proficiency in CTEs, joins, filtering, grouping, and ranking.
+## 💡 **Insights**
+
+- The most in-demand skill for Data Analysts is **SQL**, appearing in **725 job postings**, confirming its core importance in analytics.  
+- **Excel** remains a crucial tool, listed in **510 job postings**, highlighting that spreadsheet analysis still plays a major role.  
+- **Tableau** ranks third (**415 postings**) — visualization expertise continues to be valuable for data storytelling.  
+- **Python** is listed in **397 postings**, reinforcing its status as a leading programming language in analytics.  
+- **R** appears in **242 postings**, often used in statistical and academic analysis contexts.  
+
+---
+
+## 📈 **Overall Insight**
+
+- SQL remains the foundation for most data analyst roles — employers expect it across all sectors.  
+- The combination of **SQL + Python + Tableau** provides both analytical and technical strength.  
+- Mastering these three ensures competitiveness in the data analytics job market.  
+
+---
+📂 Folder Structure
+```
+/SQL_Projects
+ ├── 3.Top_Demand_Skills
+ │    ├── 3_result.png
+ │    ├── 3_top_demand_skills.sql
+ │    └── README.md
+
+```
+📌 Author: Utkarsh Naik  
+📈 Project Type: SQL-based Job Market Analysis

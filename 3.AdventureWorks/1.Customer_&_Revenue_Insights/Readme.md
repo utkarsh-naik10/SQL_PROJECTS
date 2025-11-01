@@ -111,9 +111,9 @@ The main goal of this analysis is to:
 
 ## ⚙️ Notes
 - Queries are written and formatted in **VS Code**.  
-- Executed and tested in **SSMS** connected to the AdventureWorks database.  
-- Result snapshots were taken directly from SSMS result grids.  
-- Each SQL file matches its respective result image for quick reference.
+- Executed against the AdventureWorks database through SQL Server.  
+- Result snapshots were captured directly from **VS Code output**.  
+- Each SQL file matches its respective result image for easy reference.
 
 ---
 

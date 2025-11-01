@@ -27,8 +27,6 @@ SQL PROJECT
 ```
 ---
 
----
-
 ## 🧩 Queries Overview & Insights
 
 ### 1️⃣ Top Customers by Revenue

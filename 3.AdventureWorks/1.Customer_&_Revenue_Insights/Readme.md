@@ -117,7 +117,7 @@ The main goal of this analysis is to:
 
 ---
 
-**Author:** Utkarsh Naik 
+**Author:** Utkarsh Naik   
 **Project:** SQL PROJECT → AdventureWorks → Customer & Revenue Insights  
 
 

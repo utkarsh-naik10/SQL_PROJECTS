@@ -110,9 +110,10 @@ The main goal of this analysis is to:
 ---
 
 ## ⚙️ Notes
-- Queries are tested and optimized for readability and performance.  
-- Result snapshots are from **SSMS** (SQL Server Management Studio).  
-- Each `.sql` file corresponds directly to one result image for easy reference.
+- Queries are written and formatted in **VS Code**.  
+- Executed and tested in **SSMS** connected to the AdventureWorks database.  
+- Result snapshots were taken directly from SSMS result grids.  
+- Each SQL file matches its respective result image for quick reference.
 
 ---
 

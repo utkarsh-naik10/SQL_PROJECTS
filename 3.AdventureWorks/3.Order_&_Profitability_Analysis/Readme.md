@@ -25,8 +25,6 @@ SQL PROJECT
 ```
 ---
 
----
-
 ## 🧩 Queries & Insights
 
 ### 1️⃣ High-Value Orders  

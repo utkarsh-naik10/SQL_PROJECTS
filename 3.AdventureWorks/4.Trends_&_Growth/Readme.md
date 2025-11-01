@@ -25,9 +25,6 @@ SQL PROJECT
 ```
 ---
 
-
----
-
 ## 🧩 Queries & Insights
 
 ### 1️⃣ Sales Trend Analysis  

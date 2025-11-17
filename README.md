@@ -51,8 +51,9 @@ The analysis is organized into five parts:
 ---
 
 ## 🛠️ Tech Stack
-- **SQL**: PostgreSQL  
-- **Data Sources**: Public datasets (job postings, etc.)  
+- **SQL:** SQL Server & PostgreSQL  
+- **Data Sources:** AdventureWorks database, Northwind database, public datasets  
+- **Tools:** SQL Server Management Studio (SSMS), PostgreSQL, VS Code  
 - **Visualization**: Query result screenshots  
 
 ---

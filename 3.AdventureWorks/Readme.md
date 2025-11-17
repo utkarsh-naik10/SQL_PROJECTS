@@ -8,6 +8,91 @@ The goal of this project is to understand different aspects of the AdventureWork
 
 ---
 
+## Schema Diagram  
+```mermaid
+erDiagram
+    PERSON {
+        int PersonID PK
+        string FullName
+    }
+
+    CUSTOMER {
+        int CustomerID PK
+        int PersonID FK
+    }
+
+    SALESORDERHEADER {
+        int SalesOrderID PK
+        int CustomerID FK
+        int TerritoryID FK
+        datetime OrderDate
+        money TotalDue
+    }
+
+    SALESORDERDETAIL {
+        int SalesOrderDetailID PK
+        int SalesOrderID FK
+        int ProductID FK
+        int OrderQty
+        money LineTotal
+    }
+
+    SALES_TERRITORY {
+        int TerritoryID PK
+        string Name
+    }
+
+    SALES_PERSON {
+        int SalesPersonID PK
+        int TerritoryID FK
+        int EmployeeID FK
+    }
+
+    EMPLOYEE {
+        int EmployeeID PK
+        string JobTitle
+    }
+
+    PRODUCT {
+        int ProductID PK
+        string Name
+        money ListPrice
+    }
+
+    PRODUCT_SUBCATEGORY {
+        int ProductSubcategoryID PK
+        string Name
+        int ProductCategoryID FK
+    }
+
+    PRODUCT_CATEGORY {
+        int ProductCategoryID PK
+        string Name
+    }
+
+    PRODUCTVENDOR {
+        int ProductID FK
+        int VendorID FK
+    }
+
+    VENDOR {
+        int VendorID PK
+        string VendorName
+    }
+
+    PERSON ||--o{ CUSTOMER : "has"
+    CUSTOMER ||--o{ SALESORDERHEADER : "places"
+    SALESORDERHEADER ||--o{ SALESORDERDETAIL : "contains"
+    SALESORDERHEADER }o--|| SALES_TERRITORY : "belongs to"
+    SALES_TERRITORY ||--o{ SALES_PERSON : "assigned to"
+    SALES_PERSON }o--|| EMPLOYEE : "is"
+    SALESORDERDETAIL }o--|| PRODUCT : "refers to"
+    PRODUCT }o--|| PRODUCT_SUBCATEGORY : "in"
+    PRODUCT_SUBCATEGORY }o--|| PRODUCT_CATEGORY : "in"
+    PRODUCT ||--o{ PRODUCTVENDOR : "supplied by"
+    PRODUCTVENDOR }o--|| VENDOR : "is"
+```
+---
 ## 📂 Folder Structure
 ```
 SQL PROJECT

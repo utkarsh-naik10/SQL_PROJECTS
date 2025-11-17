@@ -80,6 +80,7 @@ erDiagram
         string VendorName
     }
 
+    %% relationships
     PERSON ||--o{ CUSTOMER : "has"
     CUSTOMER ||--o{ SALESORDERHEADER : "places"
     SALESORDERHEADER ||--o{ SALESORDERDETAIL : "contains"
@@ -91,6 +92,7 @@ erDiagram
     PRODUCT_SUBCATEGORY }o--|| PRODUCT_CATEGORY : "in"
     PRODUCT ||--o{ PRODUCTVENDOR : "supplied by"
     PRODUCTVENDOR }o--|| VENDOR : "is"
+
 ```
 ---
 ## 📂 Folder Structure

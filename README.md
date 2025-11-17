@@ -31,6 +31,18 @@ Each project is self-contained with:
   - **Business Insights (Q11–Q15):** Top countries, shippers, categories, sales trends, top employees.  
   - **Advanced Analysis (Q16–Q20):** Supplier dominance, territory management, inactive customers, product rankings, year-over-year growth.  
 - **SQL concepts used**: joins, grouping, CTEs, window functions (`RANK`, `LAG`), business KPIs.  
+---
+
+### 3. [AdventureWorks – Complete SQL Analysis](./3.AdventureWorks)
+A comprehensive end-to-end project built on the **AdventureWorks** database, covering customer behavior, employee performance, profitability, growth trends, and product insights.
+
+The analysis is organized into five parts:
+- **Customer & Revenue Insights** – top customers, LTV, inactive users, repeat purchases  
+- **Employee & Sales Performance** – regional sales, hierarchy mapping, fulfillment speed  
+- **Order & Profitability Analysis** – high-value orders, product profitability, regional AOV  
+- **Trends & Growth** – YoY revenue, dynamic rankings, quarterly cohort retention  
+- **Product & Market Insights** – frequently bought-together products, top category customers, regional preferences, supplier performance  
+
 
 ---
 

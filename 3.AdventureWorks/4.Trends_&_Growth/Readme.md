@@ -1,8 +1,8 @@
 # AdventureWorks - Trends & Growth
 
 This folder is part of the **SQL PROJECT → AdventureWorks** series.  
-It focuses on analyzing sales trends, revenue growth patterns, and customer retention behavior over multiple years.  
-Each query highlights how sales performance evolved and which products or customers contributed most to growth.
+It focuses on analyzing long-term sales trends, yearly growth patterns, product performance shifts, and quarterly customer retention.  
+All queries were executed directly in **SQL Server Management Studio (SSMS)**, and snapshots were taken from the SSMS results window.
 
 ---
 
@@ -11,18 +11,19 @@ Each query highlights how sales performance evolved and which products or custom
 SQL PROJECT
 │
 └── AdventureWorks
-    │
-    └── 4.Trends_&_Growth
-        ├── 11.Sales_Trend_Analysis.sql
-        ├── 12.Dynamic_Ranking.sql
-        ├── 13.Quarterly_Cohort_Retention.sql
-        ├── README.md
-        │
-        └── result_snapshots/
-            ├── 11.Sales_Trend_Analysis.png
-            ├── 12.Dynamic_Ranking.png
-            └── 13.Quarterly_Cohort_Retention.png
+│
+└── 4.Trends_&_Growth
+├── 11.Sales_Trend_Analysis.sql
+├── 12.Dynamic_Ranking.sql
+├── 13.Quarterly_Cohort_Retention.sql
+├── README.md
+│
+└── result_snapshots/
+├── 11.Sales_Trend_Analysis.png
+├── 12.Dynamic_Ranking.png
+└── 13.Quarterly_Cohort_Retention.png
 ```
+
 ---
 
 ## 🧩 Queries & Insights
@@ -31,34 +32,35 @@ SQL PROJECT
 **File:** `11.Sales_Trend_Analysis.sql`
 
 **Description:**  
-Analyzes yearly sales performance to understand revenue growth and decline trends.  
-Compares year-over-year (YoY) changes in total revenue to identify strong and weak performance periods.
+Calculates yearly total revenue and year-over-year (YoY) growth.  
+Useful for identifying strong periods, slowdowns, and overall sales trajectory.
 
 **Result Snapshot:**  
 ![Sales Trend Analysis](result_snapshots/11.Sales_Trend_Analysis.png)
 
 **Insights:**  
-- Revenue peaked in **2013**, showing a **29.96% YoY growth** over 2012.  
-- The largest growth occurred between **2011 → 2012** (+166.15%), suggesting a strong expansion phase.  
-- However, **2014** saw a **-54.21% decline**, which indicates a drop in demand or reduced sales volume.  
-- The trend highlights the need for steady customer acquisition and consistent product strategy.
+- Strong growth between **2011 → 2012** with a **+166.15% YoY increase**.  
+- Moderate growth in **2013** at **+29.96%**.  
+- Significant drop in **2014**, falling **-54.21% YoY**, indicating a slowdown.  
+- Clear boom phase followed by contraction.
 
 ---
 
-### 2️⃣ Dynamic Ranking  
+### 2️⃣ Dynamic Ranking (Top Products by Year)  
 **File:** `12.Dynamic_Ranking.sql`
 
 **Description:**  
-Ranks products dynamically by total sales within each year to track how top-selling items change over time.
+Ranks products each year based on total sales.  
+Helps track how customer preferences shift over time.
 
 **Result Snapshot:**  
 ![Dynamic Ranking](result_snapshots/12.Dynamic_Ranking.png)
 
 **Insights:**  
-- In **2011**, *Road-150 Red, 56* led the sales charts, followed by *Mountain-100 Black, 42*.  
-- In **2012**, the *Mountain-200 Black, 42* overtook others, becoming the top product for the year.  
-- Ranking patterns show shifting customer preferences from road bikes to mountain models.  
-- Helps track evolving product performance and plan future inventory or marketing focus.
+- In **2011**, *Road-150 Red, 56* ranked #1 with the highest annual sales.  
+- *Mountain-100 Black, 42* and *Mountain-100 Silver, 38* also consistently perform well.  
+- Ranking shows strong competition between Road series and Mountain series in early years.  
+- Provides a clear view of top-performing SKUs and trend shifts.
 
 ---
 
@@ -66,45 +68,44 @@ Ranks products dynamically by total sales within each year to track how top-sell
 **File:** `13.Quarterly_Cohort_Retention.sql`
 
 **Description:**  
-Tracks how customer cohorts from specific quarters continue to place orders in later years.  
-Useful for retention analysis and understanding long-term customer engagement.
+Tracks customer cohorts based on their first purchase quarter, then checks how often they return in future years/quarters.
 
 **Result Snapshot:**  
 ![Quarterly Cohort Retention](result_snapshots/13.Quarterly_Cohort_Retention.png)
 
 **Insights:**  
-- Customers who first purchased in **2011 Q2** continued to place orders up to **2014**, showing good retention.  
-- Several repeat orders are observed in consistent quarterly intervals.  
-- Indicates that early customers from 2011 and 2012 form a loyal segment with regular purchase cycles.  
-- Valuable for retention marketing and loyalty-based strategy.
+- Many customers from **2011 Q2** continue placing orders in **2012 & 2013**, showing strong retention.  
+- Returning customers appear consistently across multiple quarters.  
+- Over 31,000 rows show ongoing engagement across years.  
+- Indicates that early cohorts are loyal and maintain a stable purchase cycle.
 
 ---
 
 ## 🧠 Key Takeaways
-- Sales grew strongly between **2011–2013**, before slowing down in **2014**.  
-- Product rankings shifted over time — mountain bikes replaced road models as top performers.  
-- Customer retention remained healthy, especially for early cohorts.  
-- These insights provide a clear view of **growth drivers**, **market trends**, and **loyal customer behavior**.
+- Sales peaked in 2012–2013 before declining in 2014.  
+- Product rankings reveal clear preference shifts between Road and Mountain bikes.  
+- Customer retention across years is strong, especially for early acquisition cohorts.  
+- These insights help understand long-term behavior across sales, customers, and products.
 
 ---
 
 ## 🗄️ Database Info
 - **Database:** AdventureWorks  
-- **Environment:** SSMS (SQL Server Management Studio)  
-- **Queries Written In:** Visual Studio Code  
-- **Snapshots Taken From:** VS Code SQL Output  
+- **Environment:** SQL Server Management Studio (SSMS)  
+- **Queries Written & Executed In:** SSMS  
+- **Snapshots Taken From:** SSMS Results Grid  
 - **Schemas Used:** Sales, Production, Customer  
 
 ---
 
 ## ⚙️ Notes
-- Queries are created and formatted in **VS Code**.  
-- All results are executed and verified in **SSMS**, connected to the AdventureWorks database.  
-- Snapshots were captured directly from VS Code output after execution.  
-- Each `.sql` file has a matching result image for clarity.
+- All queries were executed in **SSMS** 
+- Screenshots reflect actual output from SSMS after successful execution.  
+- Each SQL file has a matching result image for easy reference and documentation.
 
 ---
 
 **Author:** Utkarsh Naik  
 **Project:** SQL PROJECT → AdventureWorks → Trends & Growth  
 **Date:** 2025
+

@@ -1,8 +1,8 @@
 # AdventureWorks - Order & Profitability Analysis
 
 This folder is part of the **SQL PROJECT → AdventureWorks** series.  
-It focuses on analyzing profitability, high-value orders, and average order values across different regions.  
-Each query looks at key sales and revenue metrics to better understand product performance and order behavior.
+It focuses on analyzing high-value orders, product profitability, and average order value across sales territories.  
+All SQL queries were executed in **SQL Server Management Studio (SSMS)** and the result snapshots were captured directly from the SSMS results window.
 
 ---
 
@@ -11,18 +11,19 @@ Each query looks at key sales and revenue metrics to better understand product p
 SQL PROJECT
 │
 └── AdventureWorks
-    │
-    └── 3.Order_&_Profitability_Analysis
-        ├── 8.High_Value_Orders.sql
-        ├── 9.Profitability_by_Product.sql
-        ├── 10.Average_Order_Value_by_Region.sql
-        ├── README.md
-        │
-        └── result_snapshots/
-            ├── 8.High-Value_Orders.png
-            ├── 9.Profitability_by_Product.png
-            └── 10.Average_Order_Value_by_Region.png
+│
+└── 3.Order_&_Profitability_Analysis
+├── 8.High_Value_Orders.sql
+├── 9.Profitability_by_Product.sql
+├── 10.Average_Order_Value_by_Region.sql
+├── README.md
+│
+└── result_snapshots/
+├── 8.High-Value_Orders.png
+├── 9.Profitability_by_Product.png
+└── 10.Average_Order_Value_by_Region.png
 ```
+
 ---
 
 ## 🧩 Queries & Insights
@@ -31,16 +32,15 @@ SQL PROJECT
 **File:** `8.High_Value_Orders.sql`
 
 **Description:**  
-Identifies high-value customer orders and calculates running totals, cumulative sales, and overall contribution percentage.  
-This helps track which large orders drive the majority of total revenue.
+Identifies the highest-value customer orders and calculates running totals, cumulative sales, and each order’s contribution to total revenue.
 
 **Result Snapshot:**  
 ![High-Value Orders](result_snapshots/8.High-Value_Orders.png)
 
 **Insights:**  
-- High-value orders significantly contribute to total sales volume.  
-- A small number of large transactions account for a major portion of revenue (Pareto-like pattern).  
-- Tracking these helps identify premium customers and possible upselling opportunities.
+- Large orders make up a significant share of total sales — classic **Pareto behaviour**.  
+- The top few orders add up quickly and heavily push total revenue upward.  
+- Helps flag high-value customers and opportunities for upselling, premium service, or targeted offers.
 
 ---
 
@@ -48,16 +48,17 @@ This helps track which large orders drive the majority of total revenue.
 **File:** `9.Profitability_by_Product.sql`
 
 **Description:**  
-Calculates total revenue, total cost, and total profit for each product to understand which SKUs generate the highest margin.
+Calculates total revenue, cost, and resulting profit for each product.  
+Useful for understanding which items bring the highest margin.
 
 **Result Snapshot:**  
 ![Profitability by Product](result_snapshots/9.Profitability_by_Product.png)
 
 **Insights:**  
-- The **Mountain-200 series** (especially Black variants) shows the highest profitability.  
-- Profit margins are strong across multiple product lines, particularly in premium bike categories.  
-- Helps in pricing strategy and identifying high-return products worth scaling up.  
-- Lower-margin items can be analyzed further for cost optimization.
+- The **Mountain-200 Black / Silver** models consistently appear in the top profitable products.  
+- Road-150 and Road-250 variants also show strong revenue and margin.  
+- High-end products clearly dominate profit contribution.  
+- Lower-margin SKUs may require pricing review or cost reduction.
 
 ---
 
@@ -65,45 +66,43 @@ Calculates total revenue, total cost, and total profit for each product to under
 **File:** `10.Average_Order_Value_by_Region.sql`
 
 **Description:**  
-Calculates and compares the average order value (AOV) by sales territory.  
-Also measures the difference between each region’s AOV and the global average.
+Calculates the **Average Order Value (AOV)** for each territory and compares it with the global average.
 
 **Result Snapshot:**  
 ![Average Order Value by Region](result_snapshots/10.Average_Order_Value_by_Region.png)
 
 **Insights:**  
-- The **Central** and **Northeast** territories show the highest AOV, significantly above the global average.  
-- **Germany** and **Australia** lag behind, with AOV below the global benchmark.  
-- Indicates stronger spending patterns in domestic markets compared to international ones.  
-- Useful for region-specific pricing and sales strategy adjustments.
+- **Central**, **Northeast**, and **Southeast** have very high AOV compared to global average.  
+- **Australia** and **Germany** show lower AOV, indicating weaker spending behaviour in those regions.  
+- The big positive difference in some regions suggests strong domestic or regional demand.  
+- Helps guide region-specific pricing or promotional strategies.
 
 ---
 
 ## 🧠 Key Takeaways
-- Product profitability is dominated by high-end models, especially in the **Mountain Bike** series.  
-- Average order values differ widely by region — domestic sales outperform international markets.  
-- A small segment of large-value orders drives the majority of revenue.  
-- These insights can support inventory planning, pricing decisions, and regional sales targeting.
+- High-value orders are crucial for total sales and should be monitored closely.  
+- Profitability is heavily driven by premium bike models, especially the Mountain-200 series.  
+- Strong variation in AOV across territories indicates clear regional behaviour patterns.  
+- These insights support strategic decisions in pricing, inventory planning, and regional marketing.
 
 ---
 
 ## 🗄️ Database Info
 - **Database:** AdventureWorks  
-- **Environment:** SSMS (SQL Server Management Studio)  
-- **Queries Written In:** Visual Studio Code  
-- **Snapshots Taken From:** VS Code SQL Output  
+- **Environment:** SQL Server Management Studio (SSMS)  
+- **Queries Written & Executed In:** SSMS  
+- **Snapshots Taken From:** SSMS Results Grid  
 - **Schemas Used:** Sales, Production  
 
 ---
 
 ## ⚙️ Notes
-- Queries are written and tested in **VS Code**, connected to the AdventureWorks database.  
-- Result snapshots are captured directly from the VS Code output.  
-- Each query and image are aligned for easy comparison and review.  
-- The analysis supports understanding key profitability and order behavior patterns.
+- All SQL queries were run directly in **SSMS**, not VS Code.  
+- Snapshots and numbers reflect the exact SSMS output.  
+- Each `.sql` file corresponds directly with its own result screenshot inside the folder.
 
 ---
 
-**Author:** Utkarsh Naik   
+**Author:** Utkarsh Naik  
 **Project:** SQL PROJECT → AdventureWorks → Order & Profitability Analysis  
 **Date:** 2025

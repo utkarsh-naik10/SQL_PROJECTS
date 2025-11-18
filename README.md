@@ -42,7 +42,22 @@ The analysis is organized into five parts:
 - **Order & Profitability Analysis** – high-value orders, product profitability, regional AOV  
 - **Trends & Growth** – YoY revenue, dynamic rankings, quarterly cohort retention  
 - **Product & Market Insights** – frequently bought-together products, top category customers, regional preferences, supplier performance  
+---
+### 4. [Chinook Database – SQL Analysis](./4.Chinook%20Database)
+A complete multi-level SQL analysis project built on the **Chinook music store database**, structured into **Basic**, **Intermediate**, and **Expert-Level** analytics.
 
+The analysis covers:
+- **Basic SQL Exploration** – filtering, grouping, counting, simple joins  
+- **Intermediate Analytical Queries** – multi-table joins, customer value, track performance, revenue patterns  
+- **Expert-Level Analytics** across six modules:
+  - Revenue dashboard queries (genre, artist, monthly & yearly revenue)
+  - Customer Segmentation (RFM analysis)
+  - Genre revenue comparison
+  - Artist-level insights
+  - Product (Track) analytics
+  - Geographic insights (customers, revenue, churn-risk)
+
+**SQL concepts used:** multi-table joins, aggregates, subqueries, CTEs, ranking functions, segmentation logic, revenue modeling.
 
 ---
 

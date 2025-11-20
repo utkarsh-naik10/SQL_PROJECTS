@@ -86,4 +86,4 @@ This repo demonstrates:
 - Passionate about **data analysis, problem solving, and building end-to-end solutions**  
 - Also skilled in **Excel** and **Python**, with plans to build independent projects in each and then combine them in **capstone projects**  
 
-📫 **Contact me:** utkarsh.un@gmail.com
+📫 **Contact me:** utkarshnaik.in@gmail.com  

@@ -35,7 +35,7 @@ SQL PROJECT
 
 ### 1️⃣ Daily Customer Activity by Continent
 
-**File:** `1.Daily_Customer_Activity_by_Continent.sql`
+**File:** `1_daily_unique_customers_overall_and_by_continent_2023.sql`
 
 **Description:**
 
@@ -57,7 +57,7 @@ Helps examine daily customer activity and understand how purchasing activity is 
 
 ### 2️⃣ Monthly Revenue and Customer Counts
 
-**File:** `2.Monthly_Revenue_and_Customer_Counts.sql`
+**File:** `2_monthly_net_rev_and_unique_customers.sql`
 
 **Description:**
 
@@ -81,7 +81,7 @@ This analysis combines revenue and customer metrics to support monthly business 
 
 ### 3️⃣ Revenue by Year and Month
 
-**File:** `3.Revenue_by_Year_and_Month.sql`
+**File:** `3_net_revenue_by_year_month.sql`
 
 **Description:**
 
@@ -104,7 +104,7 @@ The results can be used to compare monthly revenue across years and identify per
 
 ### 4️⃣ Daily Revenue by Product Category
 
-**File:** `4.Daily_Revenue_by_Product_Category.sql`
+**File:** `4_daily_net_revenue_by_category_t5y.sql`
 
 **Description:**
 
@@ -125,7 +125,7 @@ The analysis provides a detailed view of how revenue varies by date and product 
 ---
 ### 5️⃣ Order Processing Time and Net Revenue by Year
 
-**File:** `5.Order_Processing_Time_and_Revenue_by_Year.sql`
+**File:** `5_avg_delivery_time_and_net_revenue_6yr.sql`
 
 **Description:**
 

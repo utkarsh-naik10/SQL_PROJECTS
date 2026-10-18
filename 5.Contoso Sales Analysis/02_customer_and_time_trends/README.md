@@ -45,7 +45,7 @@ Helps examine daily customer activity and understand how purchasing activity is 
 
 **Result Snapshot:**
 
-![Daily Customer Activity by Continent](/Result_Images/21.png)
+![Daily Customer Activity by Continent](result_snapshots/21.png)
 
 **Insights:**
 
@@ -67,7 +67,7 @@ This analysis combines revenue and customer metrics to support monthly business 
 
 **Result Snapshot:**
 
-![Monthly Revenue and Customer Counts](/Result_Images/22.png)
+![Monthly Revenue and Customer Counts](result_snapshots/22.png)
 
 **Insights:**
 
@@ -91,7 +91,7 @@ The results can be used to compare monthly revenue across years and identify per
 
 **Result Snapshot:**
 
-![Revenue by Year and Month](/Result_Images/23.png)
+![Revenue by Year and Month](result_snapshots/23.png)
 
 **Insights:**
 
@@ -114,7 +114,7 @@ The analysis provides a detailed view of how revenue varies by date and product 
 
 **Result Snapshot:**
 
-![Daily Revenue by Product Category](/Result_Images/24.png)
+![Daily Revenue by Product Category](result_snapshots/24.png)
 
 **Insights:**
 
@@ -135,7 +135,7 @@ This analysis helps evaluate yearly changes in processing time alongside revenue
 
 **Result Snapshot:**
 
-![Order Processing Time and Revenue by Year](/Result_Images/25.png)
+![Order Processing Time and Revenue by Year](result_snapshots/25.png)
 
 
 **Insights:**

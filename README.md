@@ -61,7 +61,7 @@ The analysis covers:
 
 ---
 
-### 5. [Contoso Sales Analysis – SQL Portfolio Project](./5.%20Contoso%20Sales%20Analysis)
+### 5. [Contoso Sales Analysis – SQL Portfolio Project](./5.Contoso%20Sales%20Analysis/)
 
 An end-to-end SQL analytics project built on the **Contoso sample sales database (`contoso_100k`)** using PostgreSQL. The project explores product revenue, customer purchasing behavior, cohort performance, customer lifetime value, and retention patterns through seven structured analysis modules.
 

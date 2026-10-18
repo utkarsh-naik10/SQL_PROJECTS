@@ -110,31 +110,100 @@ The following is a simplified conceptual overview of the main entities reference
 
 ```mermaid
 erDiagram
-    customer ||--o{ sales : "makes"
-    product ||--o{ sales : "appears in"
-    date ||--o{ sales : "dates"
-    store ||--o{ sales : "associated with"
+    date ||--o{ sales : "order date"
+    customer ||--o{ sales : "customer key"
+    product ||--o{ sales : "product key"
+    store ||--o{ sales : "store key"
 
     customer {
         int customerkey PK
+        int geokey
+        date startdt
+        date enddt
+        string continent
+        string gender
+        string givenname
+        string surname
+        string city
+        string state
+        string countryfull
+        date birthday
+        int age
+        string occupation
     }
+
     product {
         int productkey PK
+        string productcode
+        string productname
+        string manufacturer
+        string brand
+        numeric cost
+        numeric price
+        int categorykey
+        string categoryname
+        int subcategorykey
+        string subcategoryname
     }
-    date {
-        date date
-    }
+
     store {
         int storekey PK
+        string storecode
+        int geokey
+        string countryname
+        string state
+        date opendate
+        date closedate
+        string status
     }
+
+    date {
+        int datekey PK
+        date date
+        int year
+        string yearquarter
+        string quarter
+        string yearmonth
+        string month
+        int monthnumber
+        string dayofweek
+        int dayofweeknumber
+        int workingday
+    }
+
     sales {
-        int customerkey FK
-        int productkey FK
         int orderkey
+        int linenumber
         date orderdate
+        date deliverydate
+        int customerkey FK
+        int storekey FK
+        int productkey FK
         numeric quantity
+        numeric unitprice
         numeric netprice
+        numeric unitcost
+        string currencycode
         numeric exchangerate
+    }
+
+    cohort_analysis {
+        int customerkey
+        date orderdate
+        numeric total_net_revenue
+        int num_order
+        string country
+        int age
+        string full_name
+        date first_purchase_date
+        int cohort_year
+    }
+
+    currencyexchange {
+        date date
+        string fromcurrency
+        string tocurrency
+        numeric exchange
     }
 ```
 

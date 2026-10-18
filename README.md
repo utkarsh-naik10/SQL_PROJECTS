@@ -61,6 +61,34 @@ The analysis covers:
 
 ---
 
+### 5. [Contoso Sales Analysis – SQL Portfolio Project](./5.%20Contoso%20Sales%20Analysis)
+
+An end-to-end SQL analytics project built on the **Contoso sample sales database (`contoso_100k`)** using PostgreSQL. The project explores product revenue, customer purchasing behavior, cohort performance, customer lifetime value, and retention patterns through seven structured analysis modules.
+
+The analysis is organized into seven parts:
+
+- **Revenue & Product Analysis** – category-level revenue, median sales values, revenue comparisons, and percentile-based sales-line segmentation.
+- **Customer & Time Trends** – daily customer activity by continent, monthly revenue, historical sales trends, and order-processing time.
+- **Window Function Analysis** – customer-level averages, daily revenue contribution, running metrics, customer rankings, month-over-month growth, and moving averages.
+- **Cohort & Lifetime Value** – acquisition-cohort revenue, repeat-purchase activity, and customer lifetime value compared with cohort averages.
+- **Cohort Views & First-Purchase Metrics** – reusable SQL views, customer-level revenue details, first-purchase metrics, and customer-name standardization.
+- **Customer LTV Segmentation** – percentile-based customer segmentation and comparisons of total and average lifetime revenue across customer-value groups.
+- **Customer Retention & Churn** – cohort-level active and churned customer counts and status percentages.
+
+**Key analytical findings:**
+- **Computers** generated approximately **90.62 million** in total revenue, the highest among the analyzed product categories.
+- All eight product categories recorded lower revenue in 2023 than in 2022 in the supplied results.
+- The **High Value** customer segment contributed approximately **135.43 million** in lifetime revenue, compared with approximately 66.64 million from the Mid Value segment and 4.34 million from the Low Value segment.
+- Cohort analysis revealed differences in revenue contribution, repeat-purchase activity, and customer lifetime value across acquisition years.
+- The customer retention and churn analysis showed that approximately **90–92%** of customers were classified as churned across the displayed cohorts, based on the query's status definition.
+
+**SQL concepts used:** joins, aggregations, CTEs, reusable views, `CASE` expressions, date functions, percentile and median calculations, window functions (`ROW_NUMBER`, `RANK`, `DENSE_RANK`, `LAG`, `LEAD`), running calculations, moving averages, cohort analysis, customer lifetime value, and customer segmentation.
+
+**Tools:** PostgreSQL, DBeaver, and query-result screenshots.
+
+
+---
+
 *(Future projects will be added here — e.g. E-commerce Sales Analysis, Healthcare Dataset Analysis, etc.)*
 
 ---

@@ -159,22 +159,10 @@ This analysis helps evaluate yearly changes in processing time alongside revenue
 
 - **Database:** Contoso sample sales database
 - **Environment:** PostgreSQL
-- **Queries Written & Executed In:** PostgreSQL-compatible SQL environment
+- **Queries Written & Executed In:** DBeaver
 - **Data Areas Used:** Sales, Customer, Product, and Date-related fields
 
 ---
-
-## ⚙️ Notes
-
-- The analysis is based on the supplied SQL query results.
-- Revenue values are presented in the units returned by the dataset; no currency conversion has been applied.
-- The monthly revenue and distinct-customer output provided for Query 2 is incomplete, so full-series conclusions should be confirmed against the complete results.
-- The year-month revenue results include partial data for 2024.
-- Result snapshots should be saved in the `result_snapshots/` folder using the filenames shown above.
-- Each `.sql` file should correspond to its respective result image for easy reference.
-
----
-
 **Author:** Utkarsh Naik
 
 **Project:** SQL PROJECT → Contoso Sales Analysis → Customer and Time Trends

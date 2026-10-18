@@ -244,20 +244,8 @@ This approach smooths monthly fluctuations by considering the current month alon
 
 - **Database:** Contoso sample sales database
 - **Environment:** PostgreSQL
-- **Queries Written & Executed In:** PostgreSQL-compatible SQL environment
+- **Queries Written & Executed In:** DBeaver
 - **Data Areas Used:** Sales, Customer, Order Date, and Net Revenue fields
-
----
-
-## ⚙️ Notes
-
-- All insights are based on the supplied query outputs.
-- Revenue values are shown in the units returned by the dataset; no currency conversion has been applied.
-- The sample output for customer running metrics and daily revenue contribution illustrates selected records, not necessarily the complete result set.
-- The monthly revenue window-value and growth queries include data through April 2024. April 2024 may represent a partial period, so comparisons with complete months should be interpreted accordingly.
-- The ranking query ranks customers by **sales-row count**, as specified by the query, rather than necessarily by distinct orders.
-- Save each result screenshot in `result_snapshots/` using the corresponding filename listed in the folder structure.
-- Each `.sql` file should correspond to its result image for easy reference.
 
 ---
 
